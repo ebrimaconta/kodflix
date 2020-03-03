@@ -6,6 +6,25 @@ img {
   height: 600px;
 }
 
-.container{
-  display: flex;
+@media only screen and (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+  .item {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.overlay {
+  transition: bottom ease 1s;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255,255,255,.5);
+}
+
+.item:hover .overlay {
+  bottom: 5px;
 }
