@@ -10,10 +10,12 @@ img {
   .container {
     display: flex;
   }
-  .item {
-    position: relative;
-    overflow: hidden;
-  }
+  
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
 }
 
 .overlay {

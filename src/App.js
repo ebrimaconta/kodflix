@@ -6,50 +6,21 @@ import godfather from './godfather.jpg';
 import mywifeandkids from './mywifeandkids.jpg';
 import onlyfoolsandhorses from './onlyfoolsandhorses.jpeg';
 import './App.css';
+import Movies from './Movies';
 
 function App() {
   return (
     <div className="App">
        <h1>Welcome to Kodflix </h1>
        <div className="container">
-        <div className="item">
-          <img src={breakingBad} alt="Breaking bad" />
-          <div className="overlay">
-            <h1>Breaking Bad </h1>
-          </div>
-        </div>
-        <div className="item">
-          <img src={batman} alt="Batman" />
-          <div className="overlay">
-            <h1>Batman Begins</h1>
-          </div>
-        </div>
-        <div className="item">
-          <img src={godfather} alt="Godfather" />
-          <div className="overlay">
-            <h1>Godfather</h1>
-          </div>
-        </div>
+        <Movies name='Breaking bad' img={breakingBad} />
+        <Movies name='Batman' img={batman} />
+        <Movies name='Godfather' img={godfather} />
       </div>
       <div className="container">
-        <div className="item">
-          <img src={mywifeandkids} alt="My wife and kids" />
-          <div className="overlay">
-            <h1>My wife and kids</h1>
-          </div>
-        </div>
-        <div className="item">
-          <img src={onlyfoolsandhorses} alt="Only fools and horses" />
-          <div className="overlay">
-            <h1>Only fools and horses</h1>
-          </div>
-        </div>
-        <div className="item">
-          <img src={freshprince} alt="Fresh prince" />
-          <div className="overlay">
-            <h1>Fresh prince</h1>
-          </div>
-        </div>
+        <Movies name='My wife and kids' img={mywifeandkids} />
+        <Movies name='Only fools and horses' img={onlyfoolsandhorses} />
+        <Movies name='Fresh prince' img={freshprince} />
       </div>
     </div>
   );
