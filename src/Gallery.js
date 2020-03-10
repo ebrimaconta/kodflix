@@ -10,12 +10,11 @@ import onlyfoolsandhorses from './onlyfoolsandhorses.jpeg';
 function Gallery (props) {
     return (
     <div>
+    <h1>Welcome to Kodflix </h1>
      <div className="container">
         <Movies name='Breaking bad' img={breakingBad} />
         <Movies name='Batman' img={batman} />
         <Movies name='Godfather' img={godfather} />
-      </div>
-      <div className="container">
         <Movies name='My wife and kids' img={mywifeandkids} />
         <Movies name='Only fools and horses' img={onlyfoolsandhorses} />
         <Movies name='Fresh prince' img={freshprince} />
