@@ -1,16 +1,15 @@
 import React from 'react';
-import Movies from './Movies';
-import breakingBad from './breaking-bad.jpg';
-import batman from './batman.jpg';
-import freshprince  from './freshprince.jpg';
-import godfather from './godfather.jpg';
-import mywifeandkids from './mywifeandkids.jpg';
-import onlyfoolsandhorses from './onlyfoolsandhorses.jpeg';
+import Movies from '../Movies/Movies';
+import breakingBad from '..//images/breaking-bad.jpg';
+import batman from '../images/batman.jpg';
+import freshprince  from '../images/freshprince.jpg';
+import godfather from '../images/godfather.jpg';
+import mywifeandkids from '../images/mywifeandkids.jpg';
+import onlyfoolsandhorses from '../images/onlyfoolsandhorses.jpeg';
 
 function Gallery (props) {
     return (
     <div>
-    <h1>Welcome to Kodflix </h1>
      <div className="container">
         <Movies name='Breaking bad' img={breakingBad} />
         <Movies name='Batman' img={batman} />
