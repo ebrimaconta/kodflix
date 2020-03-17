@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import MoveList from '../Movies/ArrayList';
 
 
@@ -8,21 +8,22 @@ class Details extends React.Component {
   constructor() {
     super();
     this.state = {
-      welcomeMessage: 'Hello, this will be the details page for each Movie & TV show :)'
+      showMovie: {}
     };
   }
 
   componentDidMount() {
-	  const showOrMovieId = props.match.params.showOrMovieId;
-	  const matchedShowOrMovie = MoveList()
-	  			.find(showOrMovie =>  showOrMovie.id === showOrMovieId  );
+	  let showOrMovieId = this.props.match.params.details;
+	  let showMovie = MoveList().find(showOrMovie => showOrMovie.id === showOrMovieId  );
+	   console.log(showMovie);
+	  this.setState({ showMovie })
   }
   render() {
-    return (
-      <Link to='/'>
-        <h1>{this.state.welcomeMessage}</h1>
-      </Link>
-    );
+  	if( this.state.showMovie === undefined ){
+  		return <Redirect to="/not-found" />
+  	} else {
+    return <h1>{this.state.showMovie.name}</h1> ;
+	}
   }
 }
 
