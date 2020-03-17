@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import MoveList from '../Movies/ArrayList';
 
 
 class Details extends React.Component {
@@ -12,11 +13,9 @@ class Details extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(() => {
-      this.setState({
-        welcomeMessage: 'Coming soon! :)'
-      });
-    }, 3000);
+	  const showOrMovieId = props.match.params.showOrMovieId;
+	  const matchedShowOrMovie = MoveList()
+	  			.find(showOrMovie =>  showOrMovie.id === showOrMovieId  );
   }
   render() {
     return (
