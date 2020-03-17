@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
+import { Link , Redirect } from 'react-router-dom';
 import MoveList from '../Movies/ArrayList';
 
 
@@ -18,12 +18,24 @@ class Details extends React.Component {
 	   console.log(showMovie);
 	  this.setState({ showMovie })
   }
+  
   render() {
   	if( this.state.showMovie === undefined ){
   		return <Redirect to="/not-found" />
   	} else {
-    return <h1>{this.state.showMovie.name}</h1> ;
-	}
+    return (
+    	<div className="Details"> 
+    	<h1>{this.state.showMovie.name}</h1> 
+    	<div className="container"> 
+    	<div>{this.state.showMovie.details}</div>
+    	<img 
+    	  src={this.state.showMovie.img}
+    	  alt={this.state.showMovie.name}
+    	  />
+    	</div>
+		<Link to="/"> Back to homepage </Link>
+	</div>
+	)}
   }
 }
 
