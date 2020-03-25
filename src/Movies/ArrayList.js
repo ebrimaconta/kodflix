@@ -22,7 +22,7 @@ function getShowsAndMovies() {
         },
         { 
         	id: 'freshprince',
-        	name: 'P.s. I Love You',
+        	name: 'Fresh Prince',
         	img: freshprince, 
         	details : "The Fresh Prince of Bel-Air is an American sitcom television series created by Quincy Jones, Andy and Susan Borowitz, that originally aired on NBC from September 10, 1990 to May 20, 1996. The show stars Will Smith as a fictionalized version of himself, a street-smart teenager from West Philadelphia who is sent to move in with his wealthy uncle and aunt in their Bel Air mansion after getting into a fight in his hometown. In the series, his lifestyle often clashes with the lifestyle of his relatives in Bel Air. The series ran for six seasons and aired 148 episodes"
         },

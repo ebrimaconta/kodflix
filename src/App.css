@@ -6,13 +6,13 @@ img {
   height: 600px;
 }
 
-.container {
+.App.container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
 @media only screen and (max-width: 1281px) {
-  .container {
+  .App.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

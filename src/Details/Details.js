@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link , Redirect } from 'react-router-dom';
 import MoveList from '../Movies/ArrayList';
+import './Details.css';
 
 
 class Details extends React.Component {
@@ -27,7 +28,7 @@ class Details extends React.Component {
     	<div className="Details"> 
     	<h1>{this.state.showMovie.name}</h1> 
     	<div className="container"> 
-    	<div>{this.state.showMovie.details}</div>
+    	<div className="item">{this.state.showMovie.details}</div>
     	<img 
     	  src={this.state.showMovie.img}
     	  alt={this.state.showMovie.name}
