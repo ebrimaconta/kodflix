@@ -27,7 +27,7 @@ class Details extends React.Component {
     return (
     	<div className="Details"> 
     	<h1>{this.state.showMovie.name}</h1> 
-    	<div className="container"> 
+    	<div className="content"> 
     	<div className="item">{this.state.showMovie.details}</div>
     	<img 
     	  src={this.state.showMovie.img}

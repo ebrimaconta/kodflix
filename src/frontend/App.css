@@ -6,16 +6,30 @@ img {
   height: 600px;
 }
 
-.App.container {
+.App .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
 @media only screen and (max-width: 1281px) {
-  .App.container {
+  .App .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+   .App .overlay {  
+    position: relative;
+    bottom:  0px;
+   }
+
+  .App .item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item:hover .overlay {
+    bottom: 0px;
   }
 }
 
