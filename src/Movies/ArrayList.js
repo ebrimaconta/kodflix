@@ -40,9 +40,9 @@ function getShowsAndMovies() {
         	},
         { 
         	id: 'onlyfoolsandhorses', 
-        	name: 'Fresh prince', 
+        	name: 'Only fools and horses', 
         	img: onlyfoolsandhorses, 
-        	details: "Set in Peckham in south-east London, it stars David Jason as ambitious market trader Derek "Del Boy" Trotter, Nicholas Lyndhurst as his younger brother Rodney Trotter, and Lennard Pearce as their elderly Grandad as their sidekick. Backed by a strong supporting cast, the series follows the Trotters' highs and lows in life, in particular their attempts to get rich."
+        	details: "Set in Peckham in south-east London, it stars David Jason as ambitious market trader Derek  Trotter, Nicholas Lyndhurst as his younger brother Rodney Trotter, and Lennard Pearce as their elderly Grandad as their sidekick. Backed by a strong supporting cast, the series follows the Trotters' highs and lows in life, in particular their attempts to get rich."
         }
     ];
 }
